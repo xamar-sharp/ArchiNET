@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aggregation" xml:space="preserve">
+    <value>агрегация</value>
+  </data>
+  <data name="Association" xml:space="preserve">
+    <value>ассоциация</value>
+  </data>
+  <data name="AuthorizationError" xml:space="preserve">
+    <value>Произошла ошибка авторизации!</value>
+  </data>
+  <data name="Black" xml:space="preserve">
+    <value>Черный</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="ChatImage" xml:space="preserve">
+    <value>Фон чата</value>
+  </data>
+  <data name="ChatPageTitle" xml:space="preserve">
+    <value>Чат</value>
+  </data>
+  <data name="Class" xml:space="preserve">
+    <value>класс</value>
+  </data>
+  <data name="CodeTitle" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="Composition" xml:space="preserve">
+    <value>композиция</value>
+  </data>
+  <data name="CompositorDescription" xml:space="preserve">
+    <value>Компоновщик - структурный паттерн проектирования при котором сущность определяет возможности древовидной структуры,то есть инкапсуляция в себе потомков своего же типа сущности с рекурсивной итерацией,примером в C# могут служить такие классы как JToken,JObject,XmlNode,XElement и подобные.</value>
+  </data>
+  <data name="CompositorTitle" xml:space="preserve">
+    <value>Компоновщик</value>
+  </data>
+  <data name="ConnectionConstraint" xml:space="preserve">
+    <value>Ограничение передачи данных</value>
+  </data>
+  <data name="ConnectionLimit" xml:space="preserve">
+    <value>Лимит соединений</value>
+  </data>
+  <data name="ConnectionLimitPlaceholder" xml:space="preserve">
+    <value>Лимит...</value>
+  </data>
+  <data name="CornflowerBlue" xml:space="preserve">
+    <value>Голубой</value>
+  </data>
+  <data name="CSharp" xml:space="preserve">
+    <value>C#</value>
+  </data>
+  <data name="Culture" xml:space="preserve">
+    <value>Локализация</value>
+  </data>
+  <data name="CultureData" xml:space="preserve">
+    <value>Локализация</value>
+  </data>
+  <data name="DefaultColor" xml:space="preserve">
+    <value>Цвет текста кода</value>
+  </data>
+  <data name="DefaultTextColor" xml:space="preserve">
+    <value>Цвет текста без пресета</value>
+  </data>
+  <data name="DnsTimeout" xml:space="preserve">
+    <value>Таймаут DNS-cache</value>
+  </data>
+  <data name="DnsTimeoutPlaceholder" xml:space="preserve">
+    <value>Укажите таймаут в мс</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Английский</value>
+  </data>
+  <data name="EnterPresetFormat" xml:space="preserve">
+    <value>Введите мап(через =)</value>
+  </data>
+  <data name="Enum" xml:space="preserve">
+    <value>перечисление</value>
+  </data>
+  <data name="Generalization" xml:space="preserve">
+    <value>наслед</value>
+  </data>
+  <data name="Gray" xml:space="preserve">
+    <value>Серый</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>Зеленый</value>
+  </data>
+  <data name="Implementation" xml:space="preserve">
+    <value>имплемент</value>
+  </data>
+  <data name="Interface" xml:space="preserve">
+    <value>интерфейс</value>
+  </data>
+  <data name="InvalidPresetFormat" xml:space="preserve">
+    <value>Невалидный формат!</value>
+  </data>
+  <data name="IsDarkTheme" xml:space="preserve">
+    <value>Темная тема</value>
+  </data>
+  <data name="LastMessagesCount" xml:space="preserve">
+    <value>Последние сообщения в чате</value>
+  </data>
+  <data name="MediatorDescription" xml:space="preserve">
+    <value>Посредник - поведенческий паттерн проектирования при котором запрос от вызывающего объекта делегируется промежуточной сущности для реализации целей запроса.Пример в C# - класс DependencyService через который мы можем получить реализацию кроссплатформенного интерфейса именно на данной платформе.</value>
+  </data>
+  <data name="MediatorTitle" xml:space="preserve">
+    <value>Посредник</value>
+  </data>
+  <data name="MediumOrchid" xml:space="preserve">
+    <value>Фиолетовый</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Уведомление</value>
+  </data>
+  <data name="MyStoresTitle" xml:space="preserve">
+    <value>Мои записи</value>
+  </data>
+  <data name="Orchid" xml:space="preserve">
+    <value>Орхидейный</value>
+  </data>
+  <data name="Pattern" xml:space="preserve">
+    <value>паттерн</value>
+  </data>
+  <data name="Presets" xml:space="preserve">
+    <value>Пресеты</value>
+  </data>
+  <data name="Principle" xml:space="preserve">
+    <value>принцип</value>
+  </data>
+  <data name="ProfileTitle" xml:space="preserve">
+    <value>Профиль</value>
+  </data>
+  <data name="PrototypeDescription" xml:space="preserve">
+    <value>Прототип - порождающий паттерн проектирования при котором сущность должна проводить прототипирование себя, в стандартной реализации С# примером может служить интерфейс ICloneable</value>
+  </data>
+  <data name="PrototypeTitle" xml:space="preserve">
+    <value>Прототип</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>Красный</value>
+  </data>
+  <data name="RegistrationTitle" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="RestDescription" xml:space="preserve">
+    <value>REST (representation state transfer) является принципом сетевой передачи данных от запроса к ответу по протоколу HTTP через такие форматы как XML,JSON и поставка ответа непременно от API контроллера.Примером класса клиента в C# является HttpClient. </value>
+  </data>
+  <data name="RestTitle" xml:space="preserve">
+    <value>REST</value>
+  </data>
+  <data name="Russian" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="SaveLocal" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="SearchTitle" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="StoreTitle" xml:space="preserve">
+    <value>Обзор</value>
+  </data>
+  <data name="TopRemote" xml:space="preserve">
+    <value>Загружать записей</value>
+  </data>
+  <data name="UploadTitle" xml:space="preserve">
+    <value>Загрузка</value>
+  </data>
+  <data name="UseAnimations" xml:space="preserve">
+    <value>Использовать анимации</value>
+  </data>
+  <data name="WebViewTitle" xml:space="preserve">
+    <value>Ассоциация</value>
+  </data>
+  <data name="White" xml:space="preserve">
+    <value>Белый</value>
+  </data>
+</root>

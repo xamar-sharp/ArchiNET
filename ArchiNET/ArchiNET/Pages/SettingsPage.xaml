@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArchiNET.Pages.SettingsPage" xmlns:markup="clr-namespace:ArchiNET.MarkupExtensions">
+    <ContentPage.Content>
+        <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="isDarkLabel" Text="{markup:Localizer IsDarkTheme}" Grid.Row="0" Grid.Column="0" Style="{markup:Stylizator {x:Reference isDarkLabel}}"/>
+                    <Switch x:Name="isDark" Grid.Row="0" Grid.Column="1" Toggled="isDark_Toggled" Style="{markup:Stylizator {x:Reference isDark}}"/>
+                    <Label x:Name="defaultColorLabel" Grid.Row="1" Grid.Column="0" Text="{markup:Localizer DefaultTextColor}" Style="{markup:Stylizator {x:Reference defaultColorLabel}}"/>
+                    <Picker x:Name="defaultColor" Grid.Row="1" Grid.Column="1" ItemsSource="{Binding DefaultColors}" Style="{markup:Stylizator {x:Reference defaultColor}}" SelectedIndexChanged="Picker_SelectedIndexChanged" Title="{markup:Localizer DefaultColor}"/>
+                    <Label x:Name="connLimitLabel" Grid.Row="2" Grid.Column="0" Text="{markup:Localizer ConnectionLimit}" Style="{markup:Stylizator {x:Reference connLimitLabel}}"/>
+                    <Entry x:Name="connLimit" Grid.Row="2" Grid.Column="1" Placeholder="{markup:Localizer ConnectionLimitPlaceholder}" Completed="Entry_Completed" Style="{markup:Stylizator {x:Reference connLimit}}"/>
+                    <Label x:Name="dnsTimeoutLabel" Grid.Row="3" Grid.Column="0" Text="{markup:Localizer DnsTimeout}" Style="{markup:Stylizator {x:Reference dnsTimeoutLabel}}"/>
+                    <Entry x:Name="dnsTimeout" Grid.Row="3" Grid.Column="1" Placeholder="{markup:Localizer DnsTimeoutPlaceholder}" Completed="Entry_Completed_1" Style="{markup:Stylizator {x:Reference dnsTimeout}}"/>
+                    <Label x:Name="lastMessagesLabel" Grid.Row="4" Grid.Column="0" Text="{markup:Localizer LastMessagesCount}" Style="{markup:Stylizator {x:Reference lastMessagesLabel}}"/>
+                    <Slider x:Name="lastMessages" Grid.Row="4" Grid.Column="1" Minimum="0" Maximum="255" ValueChanged="Slider_ValueChanged" Style="{markup:Stylizator {x:Reference lastMessages}}"/>
+                    <Label x:Name="connConstraintLabel" Grid.Row="5" Grid.Column="0" Text="{markup:Localizer ConnectionConstraint}" Style="{markup:Stylizator {x:Reference connConstraintLabel}}"/>
+                    <Picker x:Name="connConstraint" Grid.Row="5" Grid.Column="1" ItemsSource="{Binding ConnectionConstraints}" Style="{markup:Stylizator {x:Reference connConstraint}}" SelectedIndexChanged="Picker_SelectedIndexChanged_1"/>
+                    <Label x:Name="useAnimLabel" Grid.Row="6" Grid.Column="0" Text="{markup:Localizer UseAnimations}" Style="{markup:Stylizator {x:Reference useAnimLabel}}"/>
+                    <CheckBox x:Name="useAnim" Grid.Row="6" Grid.Column="1" CheckedChanged="check_CheckedChanged" Style="{markup:Stylizator {x:Reference useAnim}}"/>
+                    <Label x:Name="topRemoteLabel" Grid.Row="7" Grid.Column="0" Text="{markup:Localizer TopRemote}" Style="{markup:Stylizator {x:Reference topRemoteLabel}}"/>
+                    <Entry x:Name="topRemote" Grid.Row="7" Grid.Column="1" Placeholder="{markup:Localizer TopRemotePlaceholder}" Completed="topRemote_Completed" Style="{markup:Stylizator {x:Reference topRemote}}"/>
+                    <Label x:Name="cultureLabel" Grid.Row="8" Grid.Column="0" Text="{markup:Localizer CultureData}" Style="{markup:Stylizator {x:Reference cultureLabel}}"/>
+                    <Picker x:Name="culture" Grid.Row="8" Grid.Column="1" ItemsSource="{Binding SupportedCultures}" Style="{markup:Stylizator {x:Reference culture}}" SelectedIndexChanged="culture_SelectedIndexChanged" Title="{markup:Localizer CultureData}"/>
+                    <Label x:Name="chatImageLabel" Grid.Row="9" Grid.Column="0" Text="{markup:Localizer ChatImage}" Style="{markup:Stylizator {x:Reference chatImageLabel}}"/>
+                    <ImageButton x:Name="chatImage" Source="chatBack.jpg" Grid.Row="9" Grid.Column="1" Aspect="Fill" HeightRequest="90" WidthRequest="90" CornerRadius="90" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="chatImage_Clicked"/>
+                    <Label x:Name="presetsLabel" Grid.Row="10" Grid.Column="0" Text="{markup:Localizer Presets}" Style="{markup:Stylizator {x:Reference presetsLabel}}"/>
+                    <ListView x:Name="presets" HasUnevenRows="False" RowHeight="50" CachingStrategy="RetainElement" Grid.Row="10" Grid.Column="1" ItemsSource="{Binding Presets}" Style="{markup:Stylizator {x:Reference presets}}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label x:Name="key" Text="{Binding Key}" Style="{markup:Stylizator {x:Reference key}}"/>
+                                        <BoxView x:Name="sep" HeightRequest="50" WidthRequest="1" Style="{markup:Stylizator {x:Reference sep}}"/>
+                                        <Label x:Name="value" Text="{Binding Value}" Style="{markup:Stylizator {x:Reference value}}"/>
+                                    </StackLayout>
+                                    <ViewCell.ContextActions>
+                                        <MenuItem Command="{Binding RemoveCommand}" IsDestructive="false" IconImageSource="remove.jpg"/>
+                                        <MenuItem Command="{Binding PostCommand}" IsDestructive="false" IconImageSource="addpreset.jpg"/>
+                                    </ViewCell.ContextActions>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            <Button x:Name="saveLocal" Text="{markup:Localizer SaveLocal}" Clicked="Button_Clicked" Style="{markup:Stylizator {x:Reference saveLocal}}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

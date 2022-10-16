@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Name="uploadPage"  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArchiNET.Pages.UpdateStorePage">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout>
+                <Entry x:Name="entry" Text="{Binding ViewModel.Title,Mode=TwoWay}"/>
+                <ImageButton x:Name="button" Source="{Binding Icon,Mode=TwoWay}" Command="{Binding ViewModel.IconSelectedCommand}" CommandParameter="{x:Reference button}" HeightRequest="250" WidthRequest="150"/>
+                <Picker x:Name="type" ItemsSource="{Binding PatternTypes}" SelectedIndexChanged="Picker_SelectedIndexChanged"/>
+                <Editor x:Name="description" AutoSize="TextChanges" Text="{Binding ViewModel.Description,Mode=TwoWay}"/>
+                <CheckBox x:Name="has" IsChecked="{Binding ViewModel.HasPublish,Mode=TwoWay}"/>
+                <Editor x:Name="code" Text="{Binding ViewModel.Code,Mode=TwoWay}" AutoSize="TextChanges"/>
+                <Button x:Name="saveChanges" Command="{Binding ViewModel.SaveChangesCommand}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

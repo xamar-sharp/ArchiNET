@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchiNET.Android", "ArchiNET\ArchiNET.Android\ArchiNET.Android.csproj", "{99A75385-3809-4B7E-A45F-DE76D8173DE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchiNET", "ArchiNET\ArchiNET\ArchiNET.csproj", "{B3C3FD98-328A-4746-8B5F-C6B792927AA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99A75385-3809-4B7E-A45F-DE76D8173DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A75385-3809-4B7E-A45F-DE76D8173DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A75385-3809-4B7E-A45F-DE76D8173DE2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{99A75385-3809-4B7E-A45F-DE76D8173DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A75385-3809-4B7E-A45F-DE76D8173DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99A75385-3809-4B7E-A45F-DE76D8173DE2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B3C3FD98-328A-4746-8B5F-C6B792927AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C3FD98-328A-4746-8B5F-C6B792927AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C3FD98-328A-4746-8B5F-C6B792927AA0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B3C3FD98-328A-4746-8B5F-C6B792927AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C3FD98-328A-4746-8B5F-C6B792927AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C3FD98-328A-4746-8B5F-C6B792927AA0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AB24406-4948-4410-A91C-665C4710BCF1}
+	EndGlobalSection
+EndGlobal

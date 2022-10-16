@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArchiNET.Pages.MyStoresPage">
+    <ContentPage.Content>
+            <ListView ItemsSource="{Binding Stores}" ItemTapped="ListView_ItemTapped" HasUnevenRows="False" RowHeight="150">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="{Binding CreatedAt}"/>
+                                        <Label Text="{Binding Title}"/>
+                                        <Label Text="{Binding Type}"/>
+                                        <Label Text="{Binding HasPublish,StringFormat='Published: {0}'}"/>
+                                    </StackLayout>
+                                    <Image Source="{Binding Icon}" Aspect="Fill"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                            <ViewCell.ContextActions>
+                                <MenuItem Command="{Binding RemoveCommand}" IconImageSource="del.png"/>
+                                <MenuItem Command="{Binding PublishCommand}" IconImageSource="publishing.png"/>
+                                <MenuItem Command="{Binding EditCommand}" IconImageSource="edit.png"/>
+                            </ViewCell.ContextActions>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+    </ContentPage.Content>
+</ContentPage>

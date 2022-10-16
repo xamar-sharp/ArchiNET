@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArchiNET.Pages.MainMenu" xmlns:pages="clr-namespace:ArchiNET.Pages" FlyoutBackgroundColor="MediumOrchid">
+    <Shell.FlyoutHeader>
+        <AbsoluteLayout HeightRequest="150" WidthRequest="200">
+            <AbsoluteLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="2"/>
+            </AbsoluteLayout.GestureRecognizers>
+            <Image x:Name="img" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+            <Label x:Name="log" AbsoluteLayout.LayoutBounds="0.1,0.8,1,0.1" AbsoluteLayout.LayoutFlags="All"/>
+            <Label x:Name="desc" AbsoluteLayout.LayoutBounds="0.1,0.9,1,0.1" AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
+    </Shell.FlyoutHeader>
+    <Shell.FlyoutFooter>
+        <Label Text="xamacoredevelopment@gmail.com"/>
+    </Shell.FlyoutFooter>
+    <FlyoutItem Route="patterns" FlyoutDisplayOptions="AsMultipleItems" Shell.ForegroundColor="White" Shell.BackgroundColor="DarkOrchid">
+        <Tab Route="creative" Icon="creative.png" Shell.TabBarBackgroundColor="DarkOrchid">
+            <ShellContent Route="0">
+                <pages:StoreExplorerPage  PreferenceId="0"/>
+            </ShellContent>
+        </Tab>
+        <Tab Route="struct" Icon="struct.png" Shell.TabBarBackgroundColor="DarkOrchid">
+            <ShellContent Route="0">
+                <pages:StoreExplorerPage PreferenceId="2"/>
+            </ShellContent>
+        </Tab>
+        <Tab Route="behavior" Icon="behavior.png" Shell.TabBarBackgroundColor="DarkOrchid">
+            <ShellContent Route="0">
+                <pages:StoreExplorerPage PreferenceId="1"/>
+            </ShellContent>
+        </Tab>
+        <Tab Route="principle" Icon="principle.png" Shell.TabBarBackgroundColor="DarkOrchid">
+            <ShellContent Route="0">
+                <pages:StoreExplorerPage PreferenceId="3"/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Route="settings" Icon="settings.png" Shell.ForegroundColor="White" Shell.BackgroundColor="DarkOrchid">
+        <ShellContent Route="0">
+            <pages:SettingsPage Title="Settings"/>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Route="chat" Icon="chat.png" Shell.ForegroundColor="White" Shell.BackgroundColor="DarkOrchid">
+        <ShellContent Route="0">
+            <pages:ChatPage Title="Chat"/>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Route="profile"  Icon="user.png" Shell.ForegroundColor="White" Shell.BackgroundColor="DarkOrchid">
+        <ShellContent Route="0">
+            <pages:ProfilePage Title="Profile"/>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Route="store" FlyoutDisplayOptions="AsMultipleItems" Shell.ForegroundColor="White" Shell.BackgroundColor="DarkOrchid">
+        <Tab Route="new" Icon="upload.png" Shell.TabBarBackgroundColor="DarkOrchid">
+            <ShellContent Route="0">
+                <pages:UpdateStorePage/>
+            </ShellContent>
+        </Tab>
+        <Tab Route="search" Icon="search.png" Shell.TabBarBackgroundColor="DarkOrchid">
+            <ShellContent Route="0">
+                <pages:SearchPage/>
+            </ShellContent>
+        </Tab>
+        <Tab Route="local" Icon="mystores.png" Shell.TabBarBackgroundColor="DarkOrchid">
+            <ShellContent Route="0">
+                <pages:MyStoresPage/>
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <MenuItem Clicked="MenuItem_Clicked" IconImageSource="logout.png"/>
+</Shell>
