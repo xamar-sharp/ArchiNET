@@ -14,7 +14,7 @@ namespace ArchiNET.Services
 {
     public static class RestService
     {
-        internal static readonly string IP = "192.168.8.104";
+        internal static readonly string IP = "localhost";
         internal static readonly HttpClient _client;
         internal static readonly IUserProvider _userProvider;
         internal static readonly IAuthorizationProvider _authProvider;
